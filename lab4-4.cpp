@@ -1,16 +1,27 @@
 //Lab4-4.cpp - displays the volume of a cylinder
-//Created/revised by <your name> on <current date>
+//Created/revised by Samuel Hollenbeck on 9/20/24
 
-{
-} //end of main function
-cin >> height;
-cout << "Height: ";
-cout << "Radius: ";
-cout << "Volume: " << volume << endl;
-double height   = 0.0;
-double radius   = 0.0;
-double volume   = 0.0;
-int main()
-return 0;
+#include <iostream>
 using namespace std;
-volume = PI * radius * radius * height;
+
+ int main()
+{
+  //declare named constant and variables
+  double height   = 0.0;
+  double radius   = 0.0;
+  double volume   = 0.0;
+  const double PI = 3.14159;
+  
+  //enter input item
+  cout << "Height: ";
+  cin >> height;
+  cout << "Radius: ";
+  cin >> radius;
+
+  //calculate and display the volume
+  volume = PI * radius * radius * height;
+  cout << "Volume: " << volume << endl;
+  
+  return 0;
+  
+} //end of main function

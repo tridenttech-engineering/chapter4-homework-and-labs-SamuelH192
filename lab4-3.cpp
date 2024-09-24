@@ -1,5 +1,5 @@
 //Lab4-3.cpp - displays a salesperson's commission
-//Created/revised by <your name> on <current date>
+//Created/revised by Samuel Hollenbeck on 9/20/24
 
 #include <iostream>
 using namespace std;
@@ -7,16 +7,18 @@ using namespace std;
 int main()
 {
   //declare named constant and variables
-  const double COMM_RATE = 0.1;
+  double commRate = 0.0;
   double sales = 0.0;
   double commission = 0.0;
 
   //enter input item
   cout << "Sales amount: ";
   cin >> sales;
-
+  cout << "Commission rate: ";
+  cin >> commRate;
+  
   //calculate and display the commision
-  commission = sales * COMM_RATE;
+  commission = sales * commRate;
   cout << "Commission: $" << commission << endl;
 
   return 0;
